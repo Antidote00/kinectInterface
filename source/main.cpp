@@ -4,7 +4,8 @@
 
 int main()
 {
-	Kinect* Kinect = new KinectV1();
+	// Change Kinect Version Here
+	Kinect* Kinect = new KinectV2();
 
 	cv::Mat* colorMat;
 	cv::Mat* depthMat;

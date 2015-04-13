@@ -5,6 +5,13 @@
 #include "Kinect.h"
 #include <opencv2/opencv.hpp>
 
+/*	Kinect v2 Specs
+*	Depth Resolution: 512 x 424 px
+*	Color Resolution: 1920 x 1080 px
+*	Depth Range: 50 cm to 8000 cm
+*	Horizontal FOV: 70°
+*	Vertical FOv: 60°
+*/
 
 class KinectV2 : public Kinect
 {
@@ -163,6 +170,7 @@ public:
 
 	};
 
+	// Get the Color Matrix with half of the Resolution.
 	cv::Mat* getColorMat()
 	{
 		return &colorMat;
