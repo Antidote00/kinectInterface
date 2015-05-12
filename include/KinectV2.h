@@ -77,7 +77,6 @@ private:
 		}
 
 		//Depth Source
-		IDepthFrameSource* pDepthSource;
 		hResult = pSensor->get_DepthFrameSource(&pDepthSource);
 		if (FAILED(hResult)){
 			std::cerr << "Error : IKinectSensor::get_DepthFrameSource()" << std::endl;
